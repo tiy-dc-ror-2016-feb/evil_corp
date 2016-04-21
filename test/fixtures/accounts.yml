@@ -1,9 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
+  branch_id: 
   account_number: MyString
   balance_in_cents: 1
 
 two:
+  branch_id: 
   account_number: MyString
   balance_in_cents: 1
