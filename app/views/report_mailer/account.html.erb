@@ -1,0 +1,6 @@
+<h1>Monthly Account Report</h1>
+
+<p>
+  <strong>Current Balance</strong>
+  <%= number_to_currency @account.balance_in_cents / 100 %>
+</p>

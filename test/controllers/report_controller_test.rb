@@ -15,7 +15,7 @@ class ReportControllerTest < ActionController::TestCase
 
   test "should get create" do
     assert_enqueued_with job: CreateAccountReportJob do
-      post :create, report: { account_id: accounts(:pnc).id }
+      post :create, report: { account_id: accounts(:one).id }
     end
     assert_response :success
   end

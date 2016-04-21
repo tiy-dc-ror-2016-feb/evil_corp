@@ -3,7 +3,7 @@ class ReportController < ApplicationController
   end
 
   def create
-    @branch = Branch.find(params[:report][:branch_id])
-    CreateAccountReportJob.perform_later(@branch)
+    @account = Account.find(params[:report][:account_id])
+    CreateAccountReportJob.perform_later(@account)
   end
 end

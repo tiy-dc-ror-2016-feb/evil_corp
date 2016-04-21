@@ -2,7 +2,7 @@
 <%= form_for :report, url: report_create_path do |f| %>
   <%# render "shared/errors", object: :report %>
   <%= f.select(
-      :branch_id,
+      :account_id,
       options_from_collection_for_select(
         Account.all,
         :id,
