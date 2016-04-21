@@ -5,3 +5,21 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+10.times do
+    branch = Branch.create!(name: FFaker::Company.name)
+
+    rand(100).times do
+        account = branch.accounts.create!(
+            account_number: SecureRandom.hex,
+            balance_in_cents: rand(99_999_999)
+        )
+
+        rand(500).times do
+            account.events.create!(
+                description: FFaker::Company.name.upcase,
+                value_in_cents: rand(10_000_000)
+            )
+        end
+    end
+end

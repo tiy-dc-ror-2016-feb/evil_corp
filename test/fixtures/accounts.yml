@@ -1,11 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  branch_id: 
-  account_number: MyString
-  balance_in_cents: 1
+  branch: pnc
+  account_number: 1198247hxkljvhpnjoasdf
+  balance_in_cents: 99999999
 
 two:
-  branch_id: 
-  account_number: MyString
-  balance_in_cents: 1
+  branch: wf
+  account_number: 1098247hxkljvhpnjoasdf
+  balance_in_cents: 11234908

@@ -1,7 +1,7 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  name: MyString
+pnc:
+  name: PNC IS Lame
 
-two:
-  name: MyString
+wf:
+  name: Wells Faro takes my monies!
